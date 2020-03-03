@@ -21,7 +21,7 @@ def generate_image(text):
 	h,w = image.size
 	drawning = ImageDraw.Draw(image)
 	
-	font = ImageFont.truetype(font = 'resources/Chiller.ttf', size=230)
+	font = ImageFont.truetype(font = 'resources/Chiller.ttf', size=200)
 	wt, ht = drawning.textsize(text, font=font) # size of text
 	drawning.text(((w - wt) / 2, (h - ht) / 2 ), text, font=font, fill='#1BDD1E') # прорисовка текста
 	

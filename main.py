@@ -18,5 +18,5 @@ def main():
 				client(UploadProfilePhotoRequest(image))
 	
 if __name__ == "__main__":
-        print('-=start time=-')
+        #print('-=start time=-')
         main()
