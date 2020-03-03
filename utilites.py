@@ -6,7 +6,13 @@ def get_current_time():
 	'''
 	рассчет текущего времени в зависимости от часового пояса
 	'''
-	return datetime.now(timezone('Europe/Kiev')).strftime('%H:%M')
+	# times= datetime.now(timezone('Europe/Kiev')).strftime('%H:%M')
+	time_hm = datetime.now(timezone('Europe/Kiev'))
+	tuple_time_hm = time_hm.timetuple()
+	hour = str(hex(tuple_time_hm.tm_hour)).upper()
+	minutes = str(hex(tuple_time_hm.tm_min)).upper()
+	# return times # time in 'int'
+	return f'x{hour[2:]}:x{minutes[2:]}' # time in 'hex'
 
 def generate_image(text):
 	'''создаем картинку 500х500 с часами
