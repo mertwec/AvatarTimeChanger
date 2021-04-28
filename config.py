@@ -12,6 +12,6 @@
  даже построить свой собственный клиент.
 '''
 
-api_id = 1013293
-api_hash = '49d666e7919006a4b92fb818b130d8c4'
+api_id = None
+api_hash = None
 session_name = 'session'
